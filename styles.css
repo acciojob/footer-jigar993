@@ -1,1 +1,151 @@
-/* your code here */
+/* -------------------------
+   Base Layout
+-------------------------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fdfdfd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* -------------------------
+      FOOTER ROOT
+-------------------------- */
+.site-footer {
+  background: #0f172a; /* Dark navy */
+  color: #d1d5db; /* Light gray text */
+  padding-top: 40px;
+  line-height: 1.6;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* -------------------------
+      BRAND SECTION
+-------------------------- */
+.footer-brand {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.brand-desc {
+  max-width: 500px;
+  margin: 0 auto 20px;
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+/* -------------------------
+      SOCIAL ICONS
+-------------------------- */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.media-icons svg {
+  width: 28px;
+  height: 28px;
+  fill: #cbd5e1;
+  transition: 0.3s ease;
+}
+
+.media-icons:hover svg {
+  fill: #38bdf8; /* Light blue hover */
+}
+
+/* -------------------------
+      FOOTER GRID
+-------------------------- */
+.footer-grid {
+  display: grid;
+  gap: 30px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding-bottom: 40px;
+}
+
+.footer-col h3 {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #38bdf8;
+}
+
+/* -------------------------
+      CONTACT SECTION
+-------------------------- */
+.contact address p {
+  margin: 6px 0;
+}
+
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------
+      BOTTOM FOOTER
+-------------------------- */
+.footer-bottom {
+  background: #0a1221;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom small {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* -------------------------
+      RESPONSIVE
+-------------------------- */
+@media (max-width: 768px) {
+  .brand-desc {
+    padding: 0 15px;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+}
+
